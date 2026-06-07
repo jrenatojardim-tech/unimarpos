@@ -1,3 +1,8 @@
+Ajuste efetuado. O asterisco foi adicionado diretamente junto ao preço de **R$ 42,45** tanto no título principal do Hero quanto no Pop-up de entrada. Além disso, foi incluída uma nota de rodapé discreta no final da secção de investimento para fundamentar legalmente a oferta (vinculada ao total de R$ 92,90).
+
+Aqui está o código completo e atualizado para implementação:
+
+```html
 <!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
 <head>
@@ -66,7 +71,6 @@
             z-index: -1;
         }
 
-        /* Animação do Pop-up */
         @keyframes popIn {
             0% { opacity: 0; transform: scale(0.95) translateY(20px); }
             100% { opacity: 1; transform: scale(1) translateY(0); }
@@ -98,7 +102,7 @@
             
             <div class="flex justify-center items-start mb-8">
                 <span class="text-2xl text-gold font-bold mt-2 mr-1">R$</span>
-                <span class="text-7xl font-black italic text-gold font-montserrat leading-none">42<span class="text-4xl">,45</span></span>
+                <span class="text-7xl font-black italic text-gold font-montserrat leading-none">42<span class="text-4xl">,45*</span></span>
                 <span class="text-sm text-gray-400 mt-auto mb-2 ml-2 font-bold uppercase tracking-widest">/mês cada</span>
             </div>
 
@@ -128,7 +132,7 @@
 
             <h1 class="text-6xl md:text-8xl lg:text-9xl font-black uppercase leading-[0.85] mb-4 font-montserrat tracking-tighter">
                 <span class="text-gold block mb-2">Compre 1<br>Ganhe Outra</span>
-                <span class="text-3xl md:text-5xl font-black block mt-2 text-white">Por Apenas <span class="text-gold">R$ 42,45</span> <span class="text-xl md:text-2xl text-gray-400">cada</span></span>
+                <span class="text-3xl md:text-5xl font-black block mt-2 text-white">Por Apenas <span class="text-gold">R$ 42,45*</span> <span class="text-xl md:text-2xl text-gray-400">cada</span></span>
             </h1>
             
             <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mb-12 font-light leading-relaxed">
@@ -214,7 +218,8 @@
                     <span class="text-3xl text-gold font-bold mt-2 mr-2">R$</span>
                     <span class="text-8xl md:text-9xl font-black italic text-gold font-montserrat leading-none">92<span class="text-5xl md:text-6xl">,90</span></span>
                 </div>
-                <p class="uppercase tracking-widest text-xs mt-6 text-gray-400 font-bold">Compre 1 e Ganhe Outra = R$ 42,45/mês cada</p>
+                <p class="uppercase tracking-widest text-xs mt-6 text-gray-400 font-bold">Compre 1 e Ganhe Outra = R$ 42,45*/mês cada</p>
+                <p class="text-[10px] text-gray-500 mt-4 uppercase tracking-wider text-left border-t border-white/5 pt-2">* Valor calculado com base na divisão proporcional do investimento total de R$ 92,90 mensais na contratação do combo de 2 cursos.</p>
             </div>
         </div>
     </section>
@@ -326,7 +331,6 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Aguarda 1.5 segundos após o carregamento da página para mostrar o pop-up
             setTimeout(() => {
                 const popup = document.getElementById('promo-popup');
                 popup.classList.remove('hidden');
@@ -334,7 +338,6 @@
             }, 1500);
         });
 
-        // Função para fechar o pop-up
         function closePopup() {
             const popup = document.getElementById('promo-popup');
             popup.classList.add('hidden');
@@ -343,3 +346,5 @@
     </script>
 </body>
 </html>
+
+```
