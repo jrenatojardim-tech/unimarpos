@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pós-Graduação Unimar. Nota Máxima no MEC. Compre 1, Ganhe Outra por apenas R$ 42,45/mês cada. Forme-se em até 4 meses.">
+    <meta name="description" content="Pós-Graduação Unimar. Nota Máxima no MEC. Compre 1, Ganhe Outra por apenas R$ 42,45 cada mensal. Forme-se em até 4 meses.">
     <title>Unimar EAD | Pós-Graduação de Elite - Oferta VIP</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -11,12 +11,13 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800;900&family=Inter:wght@400;500;700&display=swap');
         
         :root {
-            /* Alterado para o novo Azul Slate Escuro, mais claro que o midnight, mas ainda escuro */
-            --bg-dark: #1A2F4B; 
-            --gold-primary: #D4AF37;
-            --gold-hover: #F3E5AB;
-            --glass-bg: rgba(255, 255, 255, 0.03);
-            --glass-border: rgba(255, 255, 255, 0.08);
+            /* Novo Azul Marinho Premium Profundo */
+            --bg-dark: #0A1428; 
+            /* Nova Identidade Laranja Vibrante */
+            --gold-primary: #FF6B00;
+            --gold-hover: #FF8533;
+            --glass-bg: rgba(255, 255, 255, 0.02);
+            --glass-border: rgba(255, 255, 255, 0.05);
         }
 
         body { 
@@ -28,6 +29,7 @@
         }
 
         h1, h2, h3, .font-montserrat { font-family: 'Montserrat', sans-serif; }
+        /* Mantivemos a classe .text-gold no HTML por estrutura, mas agora ela puxa o Laranja */
         .text-gold { color: var(--gold-primary); }
         .bg-gold { background-color: var(--gold-primary); }
         .border-gold { border-color: var(--gold-primary); }
@@ -39,7 +41,7 @@
             border: 1px solid var(--glass-border); 
             transition: transform 0.3s ease, border-color 0.3s ease;
         }
-        .card-glass:hover { border-color: rgba(212, 175, 55, 0.4); transform: translateY(-5px); }
+        .card-glass:hover { border-color: rgba(255, 107, 0, 0.4); transform: translateY(-5px); }
 
         .input-premium {
             background: rgba(0, 0, 0, 0.5);
@@ -49,21 +51,22 @@
         .input-premium:focus { border-color: var(--gold-primary); background: rgba(0, 0, 0, 0.8); }
 
         .btn-cta {
-            background: linear-gradient(135deg, #D4AF37 0%, #AA8C2C 100%);
-            color: #000;
+            background: linear-gradient(135deg, #FF6B00 0%, #CC5500 100%);
+            color: #ffffff; /* Ajustado para branco para dar super contraste com o laranja */
             transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
+            box-shadow: 0 4px 20px rgba(255, 107, 0, 0.3);
         }
         .btn-cta:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(212, 175, 55, 0.5);
-            background: linear-gradient(135deg, #F3E5AB 0%, #D4AF37 100%);
+            box-shadow: 0 8px 30px rgba(255, 107, 0, 0.5);
+            background: linear-gradient(135deg, #FF8533 0%, #FF6B00 100%);
         }
 
         .bg-mesh {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background: radial-gradient(circle at 10% 40%, rgba(212, 175, 55, 0.06), transparent 60%),
-                        radial-gradient(circle at 90% 80%, rgba(255, 255, 255, 0.03), transparent 50%);
+            /* Efeito de Brilho Premium de Fundo (Laranja e Azul Ciano) */
+            background: radial-gradient(circle at 15% 30%, rgba(255, 107, 0, 0.12), transparent 50%),
+                        radial-gradient(circle at 85% 70%, rgba(0, 163, 255, 0.08), transparent 50%);
             z-index: -1;
         }
 
@@ -78,8 +81,8 @@
 </head>
 <body class="relative">
 
-    <div id="promo-popup" class="fixed inset-0 z-[100] hidden items-center justify-center bg-[#1A2F4B]/85 backdrop-blur-sm p-4 transition-opacity duration-300">
-        <div class="relative bg-[#1A2F4B] border-2 border-gold rounded-[2rem] max-w-lg w-full p-10 md:p-12 text-center shadow-[0_0_80px_rgba(212,175,55,0.25)] animate-pop-in">
+    <div id="promo-popup" class="fixed inset-0 z-[100] hidden items-center justify-center bg-[#0A1428]/85 backdrop-blur-sm p-4 transition-opacity duration-300">
+        <div class="relative bg-[#0A1428] border-2 border-gold rounded-[2rem] max-w-lg w-full p-10 md:p-12 text-center shadow-[0_0_80px_rgba(255,107,0,0.25)] animate-pop-in">
             <button onclick="closePopup()" class="absolute top-5 right-6 text-gray-500 hover:text-white transition-colors" aria-label="Fechar pop-up">
                 <i class="fas fa-times text-2xl"></i>
             </button>
@@ -98,8 +101,8 @@
             
             <div class="flex justify-center items-start mb-2">
                 <span class="text-2xl text-gold font-bold mt-2 mr-1">R$</span>
-                <span class="text-7xl font-black italic text-gold font-montserrat leading-none">42<span class="text-4xl">,45</span><span class="text-3xl align-top">*</span></span>
-                <span class="text-sm text-gray-400 mt-auto mb-2 ml-2 font-bold uppercase tracking-widest">/mês cada</span>
+                <span class="text-7xl font-black italic text-gold font-montserrat leading-none tracking-wide">42<span class="text-4xl">,45</span><span class="text-3xl align-top">*</span></span>
+                <span class="text-sm text-gray-400 mt-auto mb-2 ml-2 font-bold uppercase tracking-widest">cada mensal</span>
             </div>
             
             <p class="text-xs text-gold font-bold uppercase tracking-widest mb-8 bg-white/5 inline-block px-4 py-2 rounded-full">
@@ -117,10 +120,10 @@
         </div>
     </div>
 
-    <nav class="fixed w-full z-50 bg-[#1A2F4B]/90 backdrop-blur-lg border-b border-white/5 py-4">
+    <nav class="fixed w-full z-50 bg-[#0A1428]/90 backdrop-blur-lg border-b border-white/5 py-4">
         <div class="container mx-auto px-6 flex justify-between items-center">
             <img src="unimar.png" alt="Unimar Logo" class="h-10 logo-white">
-            <a href="#matricula" class="text-xs font-black uppercase tracking-[0.2em] text-gold border border-gold px-6 py-2 rounded-full hover:bg-gold hover:text-black transition-colors">Vagas VIP</a>
+            <a href="#matricula" class="text-xs font-black uppercase tracking-[0.2em] text-gold border border-gold px-6 py-2 rounded-full hover:bg-gold hover:text-white transition-colors">Vagas VIP</a>
         </div>
     </nav>
 
@@ -143,7 +146,7 @@
                 <span class="text-white block">Compre 1</span>
                 <span class="text-gold block mb-2">Ganhe Outra</span>
                 
-                <span class="text-3xl md:text-5xl font-black block mt-2 text-white">Por Apenas <span class="text-gold">R$ 42,45<span class="text-2xl md:text-3xl align-top">*</span></span> <span class="text-xl md:text-2xl text-gray-400">cada</span></span>
+                <span class="text-3xl md:text-5xl font-black block mt-2 text-white">Por Apenas <span class="text-gold tracking-wide">R$ 42,45<span class="text-2xl md:text-3xl align-top">*</span></span> <span class="text-xl md:text-2xl text-gray-400">cada mensal</span></span>
             </h1>
             
             <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mb-12 font-light leading-relaxed">
@@ -156,28 +159,33 @@
         </div>
     </main>
 
-    <section class="py-20 bg-[#1A2F4B] relative z-10">
+    <section class="py-20 bg-[#0A1428] relative z-10">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
                 <h2 class="text-3xl font-black uppercase font-montserrat mb-4">Tradição e Reconhecimento</h2>
                 <p class="text-gray-400 max-w-2xl mx-auto">A qualidade e o suporte do EAD Unimar validados pelos alunos.</p>
             </div>
 
-            <div class="grid md:grid-cols-3 gap-8 mb-20">
-                <div class="card-glass p-8 text-center rounded-2xl">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
+                <div class="card-glass p-6 text-center rounded-2xl">
                     <i class="fas fa-gem text-4xl text-blue-400 mb-4"></i>
                     <h3 class="text-3xl font-black text-white mb-2">98,15%</h3>
-                    <p class="text-xs uppercase tracking-widest text-gray-500 font-bold">De aprovação dos alunos<br>(Selo Quero Bolsa)</p>
+                    <p class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">De aprovação dos alunos<br>(Selo Quero Bolsa)</p>
                 </div>
-                <div class="card-glass p-8 text-center rounded-2xl border-b-4 border-gold">
+                <div class="card-glass p-6 text-center rounded-2xl border-b-4 border-gold">
                     <i class="fas fa-heart text-4xl text-red-500 mb-4"></i>
                     <h3 class="text-3xl font-black text-white mb-2">100%</h3>
-                    <p class="text-xs uppercase tracking-widest text-gray-500 font-bold">De satisfação total<br>(Educa Mais Brasil)</p>
+                    <p class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">De satisfação total<br>(Educa Mais Brasil)</p>
                 </div>
-                <div class="card-glass p-8 text-center rounded-2xl">
+                <div class="card-glass p-6 text-center rounded-2xl border-b-4" style="border-color: #23C275;">
+                    <i class="fas fa-smile text-4xl mb-4" style="color: #23C275;"></i>
+                    <h3 class="text-3xl font-black text-white mb-2">8.7/10</h3>
+                    <p class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Reputação Ótimo<br>(Reclame Aqui)</p>
+                </div>
+                <div class="card-glass p-6 text-center rounded-2xl">
                     <i class="fas fa-award text-4xl text-gold mb-4"></i>
                     <h3 class="text-3xl font-black text-white mb-2">Nota 5</h3>
-                    <p class="text-xs uppercase tracking-widest text-gray-500 font-bold">Nota Máxima Oficial<br>(Avaliação do MEC)</p>
+                    <p class="text-[10px] uppercase tracking-widest text-gray-500 font-bold">Nota Máxima Oficial<br>(Avaliação do MEC)</p>
                 </div>
             </div>
 
@@ -198,7 +206,7 @@
         </div>
     </section>
 
-    <section class="py-24 border-y border-white/5 relative z-10 bg-[#1A2F4B]">
+    <section class="py-24 border-y border-white/5 relative z-10 bg-[#060B17]">
         <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
             <div>
                 <h2 class="text-5xl font-black uppercase mb-6 font-montserrat leading-tight">
@@ -229,7 +237,7 @@
                     <span class="text-3xl text-gold font-bold mt-2 mr-2">R$</span>
                     <span class="text-8xl md:text-9xl font-black italic text-gold font-montserrat leading-none">92<span class="text-5xl md:text-6xl">,90</span></span>
                 </div>
-                <p class="uppercase tracking-widest text-xs mt-6 text-gray-400 font-bold">Compre 1 e Ganhe Outra = R$ 42,45/mês cada</p>
+                <p class="uppercase tracking-widest text-xs mt-6 text-gray-400 font-bold">Compre 1 e Ganhe Outra = R$ 42,45 cada mensal</p>
                 
                 <div class="text-[10px] text-gray-500 mt-6 uppercase tracking-wider text-left border-t border-white/5 pt-4 space-y-2">
                     <p>* Valor calculado com base na divisão proporcional do investimento total de R$ 92,90 mensais na contratação do combo de 2 cursos.</p>
@@ -239,7 +247,7 @@
         </div>
     </section>
 
-    <section class="py-24 bg-[#1A2F4B] border-b border-white/5">
+    <section class="py-24 bg-[#0A1428] border-b border-white/5">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-black text-center mb-16 uppercase font-montserrat">Portfólio de Elite</h2>
             
@@ -284,7 +292,7 @@
     </section>
 
     <section id="matricula" class="py-24 container mx-auto px-6 max-w-2xl relative z-10">
-        <div class="card-glass p-10 md:p-14 rounded-[2rem] border border-gold/50 shadow-[0_0_50px_rgba(212,175,55,0.1)]">
+        <div class="card-glass p-10 md:p-14 rounded-[2rem] border border-gold/50 shadow-[0_0_50px_rgba(255,107,0,0.1)]">
             <div class="text-center mb-10">
                 <h2 class="text-3xl md:text-4xl font-black uppercase font-montserrat mb-3">VAGA VIP PREMIUM</h2>
                 <div class="inline-flex items-center justify-center gap-2 bg-red-900/30 text-red-400 border border-red-500/30 px-6 py-2 rounded-full">
@@ -314,7 +322,7 @@
         </div>
     </section>
 
-    <footer class="pt-20 pb-10 border-t border-white/5 bg-[#1A2F4B]">
+    <footer class="pt-20 pb-10 border-t border-white/5 bg-[#0A1428]">
         <div class="container mx-auto px-6 text-center">
             <img src="UNIMAR EAD azul.png" alt="Unimar EAD Logo" class="h-14 mx-auto mb-12 logo-white opacity-80">
             
