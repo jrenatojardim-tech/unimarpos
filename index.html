@@ -11,13 +11,13 @@
         :root {
             /* Fundo Azul Marinho Premium Profundo - Mantido como base */
             --bg-dark: #0A1428; 
-            /* Nova Identidade Laranja Radiante e Vibrante */
-            --gold-primary: #FF8000; /* Laranja mais puro e radiante */
-            --gold-hover: #FFA033; /* Tom mais claro para hover */
+            /* Identidade Laranja com Muito Mais Vida / Vibrante */
+            --gold-primary: #FF5500; 
+            --gold-hover: #FF7733; 
             --glass-bg: rgba(255, 255, 255, 0.02);
             --glass-border: rgba(255, 255, 255, 0.05);
-            /* Azul Ciano Brilhante para acentos */
-            --cyan-accent: #00D1FF; 
+            /* Azul Ciano Mais Claro e Iluminado */
+            --cyan-accent: #4DEBFF; 
         }
 
         body { 
@@ -40,7 +40,7 @@
             border: 1px solid var(--glass-border); 
             transition: transform 0.3s ease, border-color 0.3s ease;
         }
-        .card-glass:hover { border-color: rgba(255, 128, 0, 0.4); transform: translateY(-5px); }
+        .card-glass:hover { border-color: rgba(255, 85, 0, 0.4); transform: translateY(-5px); }
 
         .input-premium {
             background: rgba(0, 0, 0, 0.5);
@@ -50,21 +50,21 @@
         .input-premium:focus { border-color: var(--gold-primary); background: rgba(0, 0, 0, 0.8); }
 
         .btn-cta {
-            background: linear-gradient(135deg, #FF8000 0%, #E66A00 100%); /* Gradiente mais radiante */
+            background: linear-gradient(135deg, #FF5500 0%, #E64D00 100%);
             color: #ffffff;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 20px rgba(255, 128, 0, 0.3); /* Sombra laranja radiante */
+            box-shadow: 0 4px 20px rgba(255, 85, 0, 0.3);
         }
         .btn-cta:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 30px rgba(255, 128, 0, 0.5); /* Sombra hover mais intensa */
-            background: linear-gradient(135deg, #FFA033 0%, #FF8000 100%); /* Gradiente hover mais claro e radiante */
+            box-shadow: 0 8px 30px rgba(255, 85, 0, 0.5); 
+            background: linear-gradient(135deg, #FF7733 0%, #FF5500 100%); 
         }
 
         .bg-mesh {
             position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-            background: radial-gradient(circle at 15% 30%, rgba(255, 128, 0, 0.12), transparent 50%), /* Laranja radiante */
-                        radial-gradient(circle at 85% 70%, rgba(0, 209, 255, 0.15), transparent 60%); /* Azul ciano mais brilhante e forte */
+            background: radial-gradient(circle at 15% 30%, rgba(255, 85, 0, 0.15), transparent 50%), 
+                        radial-gradient(circle at 85% 70%, rgba(77, 235, 255, 0.2), transparent 60%); 
             z-index: -1;
         }
 
@@ -78,7 +78,7 @@
     </style></head><body class="relative">
 
     <div id="promo-popup" class="fixed inset-0 z-[100] hidden items-center justify-center bg-[#0A1428]/85 backdrop-blur-sm p-4 transition-opacity duration-300">
-        <div class="relative bg-[#0A1428] border-2 border-gold rounded-[2rem] max-w-lg w-full p-12 md:p-14 text-center shadow-[0_0_80px_rgba(255,128,0,0.25)] animate-pop-in">
+        <div class="relative bg-[#0A1428] border-2 border-gold rounded-[2rem] max-w-lg w-full p-12 md:p-14 text-center shadow-[0_0_80px_rgba(255,85,0,0.25)] animate-pop-in">
             <button onclick="closePopup()" class="absolute top-5 right-6 text-gray-500 hover:text-white transition-colors" aria-label="Fechar pop-up">
                 <i class="fas fa-times text-2xl"></i>
             </button>
@@ -94,7 +94,7 @@
             <p class="text-gray-400 mt-8 mb-6 font-medium uppercase tracking-widest text-xs">Pós-Graduação de Elite com certificação MEC</p> <div class="flex justify-center items-start mb-2">
                 <span class="text-2xl text-gold font-bold mt-2 mr-1">R$</span>
                 <span class="text-7xl font-black italic text-gold font-montserrat leading-none tracking-wide">42<span class="text-4xl">,45</span><span class="text-3xl align-top">*</span></span>
-                <span class="text-sm text-gray-400 mt-auto mb-2 ml-2 font-bold uppercase tracking-widest">cada mensal</span>
+                <span class="text-[10px] text-gray-400 mt-auto mb-2 ml-3 font-medium lowercase tracking-[0.3em]">cada mensal</span>
             </div>
             
             <p class="text-xs text-gold font-bold uppercase tracking-widest mb-10 bg-white/5 inline-block px-4 py-2 rounded-full"> <i class="fas fa-rocket mr-2"></i>Formação em até 4 meses**
@@ -134,7 +134,7 @@
             <h1 class="text-6xl md:text-8xl lg:text-9xl font-black uppercase leading-[0.85] mb-6 font-montserrat tracking-tighter"> <span class="text-white block">Compre 1</span>
                 <span class="text-gold block mb-2">Ganhe Outra</span>
                 
-                <span class="text-3xl md:text-5xl font-black block mt-4 text-white">Por Apenas <span class="text-gold tracking-wide">R$ 42,45<span class="text-2xl md:text-3xl align-top">*</span></span> <span class="text-xl md:text-2xl text-gray-400">cada mensal</span></span> </h1>
+                <span class="text-3xl md:text-5xl font-black block mt-4 text-white">Por Apenas <span class="text-gold tracking-wide">R$ 42,45<span class="text-2xl md:text-3xl align-top">*</span></span> <span class="text-sm md:text-base text-gray-400 lowercase tracking-[0.3em] font-normal ml-3">cada mensal</span></span> </h1>
             
             <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mb-16 font-light leading-relaxed"> Mais de 70 anos de tradição acadêmica. O atalho definitivo para <strong class="text-white font-medium">concursos, progressão funcional</strong> e liderança no mercado.
             </p>
@@ -209,7 +209,7 @@
                     <span class="text-3xl text-gold font-bold mt-2 mr-2">R$</span>
                     <span class="text-8xl md:text-9xl font-black italic text-gold font-montserrat leading-none">92<span class="text-5xl md:text-6xl">,90</span></span>
                 </div>
-                <p class="uppercase tracking-widest text-xs mt-6 text-gray-400 font-bold">Compre 1 e Ganhe Outra = R$ 42,45 cada mensal</p>
+                <p class="uppercase tracking-widest text-xs mt-6 text-gray-400 font-bold">Compre 1 e Ganhe Outra = R$ 42,45 <span class="lowercase">cada mensal</span></p>
                 
                 <div class="text-[10px] text-gray-500 mt-6 uppercase tracking-wider text-left border-t border-white/5 pt-4 space-y-2">
                     <p>* Valor calculado com base na divisão proporcional do investimento total de R$ 92,90 mensais na contratação do combo de 2 cursos.</p>
@@ -226,127 +226,214 @@
                         PÓS PREMIUM EM EDUCAÇÃO <i class="fas fa-arrow-right text-gold"></i>
                     </h2>
                 </div>
-                <p class="text-gray-400 text-lg max-w-3xl pl-5 border-l border-white/5">
-                    Especializações 100% online, com <strong class="text-white">mais de 500 horas de carga horária</strong>, estruturadas estrategicamente para impulsionar sua carreira e garantir pontuação extra nos melhores concursos públicos do país.
+                <p class="text-gray-400 text-lg max-w-3xl pl-5 border-l border-white/5 mb-6">
+                    Especializações 100% online, com <strong class="text-white">mais de 600 horas de carga horária</strong>, estruturadas estrategicamente para impulsionar sua carreira e garantir pontuação extra nos melhores concursos públicos do país.
                 </p>
+                
+                <div class="inline-flex flex-col md:flex-row md:items-center gap-4 bg-gradient-to-r from-orange-900/40 to-transparent border-l-4 border-gold p-5 rounded-r-xl">
+                    <i class="fas fa-stopwatch text-3xl text-gold md:ml-2"></i>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        <strong class="text-white uppercase tracking-wider text-[11px] block mb-1">Acelere sua Formação</strong>
+                        É perfeitamente possível concluir sua Pós <strong class="text-gold">em até 4 meses</strong>! Esse prazo flexível depende apenas da sua escolha de curso e da sua rotina diária de estudos.
+                    </p>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1"> <div class="flex justify-between items-center mb-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"> 
+                
+                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1 flex flex-col h-full"> 
+                    <div class="flex justify-between items-center mb-6">
                         <span class="text-gray-600 font-black text-2xl font-montserrat">01</span>
                         <span class="bg-orange-900/30 text-gold border border-gold/20 px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold">EDUCAÇÃO PREMIUM</span>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-4 leading-snug font-montserrat">Docência no Ensino Superior</h3>
-                    <p class="text-sm text-gray-400 mb-8 leading-relaxed">Metodologias ativas e práticas inovadoras para atuação destacada no ensino universitário e carreira acadêmica.</p>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed flex-grow">Metodologias ativas e práticas inovadoras para atuação destacada no ensino universitário e carreira acadêmica.</p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-8 mt-auto">
+                        <span class="bg-white/5 border border-white/10 text-gray-300 px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="far fa-clock text-gold mr-1"></i> 764 horas</span>
+                        <span class="bg-orange-900/20 border border-gold/30 text-gold px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="fas fa-bolt mr-1"></i> Até 4 Meses*</span>
+                    </div>
+
                     <a href="#matricula" class="text-gold font-bold uppercase text-xs tracking-[0.2em] group-hover:text-white transition-colors flex items-center">
                         CONHECER A PÓS <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1"> <div class="flex justify-between items-center mb-6">
+                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1 flex flex-col h-full"> 
+                    <div class="flex justify-between items-center mb-6">
                         <span class="text-gray-600 font-black text-2xl font-montserrat">02</span>
                         <span class="bg-orange-900/30 text-gold border border-gold/20 px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold">EDUCAÇÃO INCLUSIVA</span>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-4 leading-snug font-montserrat">Educação Especial com Ênfase em Deficiência Auditiva</h3>
-                    <p class="text-sm text-gray-400 mb-8 leading-relaxed">Estratégias pedagógicas focadas no atendimento especializado e inclusão plena de alunos com deficiência auditiva.</p>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed flex-grow">Estratégias pedagógicas focadas no atendimento especializado e inclusão plena de alunos com deficiência auditiva.</p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-8 mt-auto">
+                        <span class="bg-white/5 border border-white/10 text-gray-300 px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="far fa-clock text-gold mr-1"></i> 775 horas</span>
+                        <span class="bg-orange-900/20 border border-gold/30 text-gold px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="fas fa-bolt mr-1"></i> Até 4 Meses*</span>
+                    </div>
+
                     <a href="#matricula" class="text-gold font-bold uppercase text-xs tracking-[0.2em] group-hover:text-white transition-colors flex items-center">
                         CONHECER A PÓS <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1"> <div class="flex justify-between items-center mb-6">
+                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1 flex flex-col h-full"> 
+                    <div class="flex justify-between items-center mb-6">
                         <span class="text-gray-600 font-black text-2xl font-montserrat">03</span>
                         <span class="bg-orange-900/30 text-gold border border-gold/20 px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold">EDUCAÇÃO INCLUSIVA</span>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-4 leading-snug font-montserrat">Educação Especial com Ênfase em Deficiência Intelectual</h3>
-                    <p class="text-sm text-gray-400 mb-8 leading-relaxed">Práticas de ensino adaptadas e metodologias para o desenvolvimento cognitivo de pessoas com deficiência intelectual.</p>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed flex-grow">Práticas de ensino adaptadas e metodologias para o desenvolvimento cognitivo de pessoas com deficiência intelectual.</p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-8 mt-auto">
+                        <span class="bg-white/5 border border-white/10 text-gray-300 px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="far fa-clock text-gold mr-1"></i> 700 horas</span>
+                        <span class="bg-orange-900/20 border border-gold/30 text-gold px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="fas fa-bolt mr-1"></i> Até 4 Meses*</span>
+                    </div>
+
                     <a href="#matricula" class="text-gold font-bold uppercase text-xs tracking-[0.2em] group-hover:text-white transition-colors flex items-center">
                         CONHECER A PÓS <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1"> <div class="flex justify-between items-center mb-6">
+                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1 flex flex-col h-full"> 
+                    <div class="flex justify-between items-center mb-6">
                         <span class="text-gray-600 font-black text-2xl font-montserrat">04</span>
                         <span class="bg-orange-900/30 text-gold border border-gold/20 px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold">EDUCAÇÃO INCLUSIVA</span>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-4 leading-snug font-montserrat">Educação Especial com Ênfase em Deficiência Visual e Sistema Braille</h3>
-                    <p class="text-sm text-gray-400 mb-8 leading-relaxed">Domínio do Sistema Braille e técnicas de adaptação de materiais para inclusão no ambiente escolar.</p>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed flex-grow">Domínio do Sistema Braille e técnicas de adaptação de materiais para inclusão no ambiente escolar.</p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-8 mt-auto">
+                        <span class="bg-white/5 border border-white/10 text-gray-300 px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="far fa-clock text-gold mr-1"></i> 734 horas</span>
+                        <span class="bg-orange-900/20 border border-gold/30 text-gold px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="fas fa-bolt mr-1"></i> Até 4 Meses*</span>
+                    </div>
+
                     <a href="#matricula" class="text-gold font-bold uppercase text-xs tracking-[0.2em] group-hover:text-white transition-colors flex items-center">
                         CONHECER A PÓS <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1"> <div class="flex justify-between items-center mb-6">
+                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1 flex flex-col h-full"> 
+                    <div class="flex justify-between items-center mb-6">
                         <span class="text-gray-600 font-black text-2xl font-montserrat">05</span>
                         <span class="bg-orange-900/30 text-gold border border-gold/20 px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold">EDUCAÇÃO INCLUSIVA</span>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-4 leading-snug font-montserrat">Educação Especial com Ênfase em TGD e Altas Habilidades</h3>
-                    <p class="text-sm text-gray-400 mb-8 leading-relaxed">Atendimento especializado para o Espectro Autista e suporte ao desenvolvimento de altas habilidades e superdotação.</p>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed flex-grow">Atendimento especializado para o Espectro Autista e suporte ao desenvolvimento de altas habilidades e superdotação.</p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-8 mt-auto">
+                        <span class="bg-white/5 border border-white/10 text-gray-300 px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="far fa-clock text-gold mr-1"></i> 757 horas</span>
+                        <span class="bg-orange-900/20 border border-gold/30 text-gold px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="fas fa-bolt mr-1"></i> Até 4 Meses*</span>
+                    </div>
+
                     <a href="#matricula" class="text-gold font-bold uppercase text-xs tracking-[0.2em] group-hover:text-white transition-colors flex items-center">
                         CONHECER A PÓS <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1"> <div class="flex justify-between items-center mb-6">
+                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1 flex flex-col h-full"> 
+                    <div class="flex justify-between items-center mb-6">
                         <span class="text-gray-600 font-black text-2xl font-montserrat">06</span>
                         <span class="bg-orange-900/30 text-gold border border-gold/20 px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold">EDUCAÇÃO PREMIUM</span>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-4 leading-snug font-montserrat">Educação Especial e Inclusiva</h3>
-                    <p class="text-sm text-gray-400 mb-8 leading-relaxed">Fundamentos e práticas essenciais para a promoção de um ambiente escolar verdadeiramente acolhedor e integrativo.</p>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed flex-grow">Fundamentos e práticas essenciais para a promoção de um ambiente escolar verdadeiramente acolhedor e integrativo.</p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-8 mt-auto">
+                        <span class="bg-white/5 border border-white/10 text-gray-300 px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="far fa-clock text-gold mr-1"></i> 781 horas</span>
+                        <span class="bg-orange-900/20 border border-gold/30 text-gold px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="fas fa-bolt mr-1"></i> Até 4 Meses*</span>
+                    </div>
+
                     <a href="#matricula" class="text-gold font-bold uppercase text-xs tracking-[0.2em] group-hover:text-white transition-colors flex items-center">
                         CONHECER A PÓS <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1"> <div class="flex justify-between items-center mb-6">
+                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1 flex flex-col h-full"> 
+                    <div class="flex justify-between items-center mb-6">
                         <span class="text-gray-600 font-black text-2xl font-montserrat">07</span>
                         <span class="bg-orange-900/30 text-gold border border-gold/20 px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold">TECNOLOGIA & EDUCAÇÃO</span>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-4 leading-snug font-montserrat">Educação Especial com Ênfase em Tecnologia Assistiva</h3>
-                    <p class="text-sm text-gray-400 mb-8 leading-relaxed">Uso de tecnologias e ferramentas de comunicação alternativa para potencializar o processo de aprendizagem.</p>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed flex-grow">Uso de tecnologias e ferramentas de comunicação alternativa para potencializar o processo de aprendizagem.</p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-8 mt-auto">
+                        <span class="bg-white/5 border border-white/10 text-gray-300 px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="far fa-clock text-gold mr-1"></i> 734 horas</span>
+                        <span class="bg-orange-900/20 border border-gold/30 text-gold px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="fas fa-bolt mr-1"></i> Até 4 Meses*</span>
+                    </div>
+
                     <a href="#matricula" class="text-gold font-bold uppercase text-xs tracking-[0.2em] group-hover:text-white transition-colors flex items-center">
                         CONHECER A PÓS <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1"> <div class="flex justify-between items-center mb-6">
+                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1 flex flex-col h-full"> 
+                    <div class="flex justify-between items-center mb-6">
                         <span class="text-gray-600 font-black text-2xl font-montserrat">08</span>
                         <span class="bg-orange-900/30 text-gold border border-gold/20 px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold">PSICOPEDAGOGIA</span>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-4 leading-snug font-montserrat">Educação Especial e Psicomotricidade</h3>
-                    <p class="text-sm text-gray-400 mb-8 leading-relaxed">Intervenção psicomotora assertiva no processo educacional para alunos com necessidades educativas especiais.</p>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed flex-grow">Intervenção psicomotora assertiva no processo educacional para alunos com necessidades educativas especiais.</p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-8 mt-auto">
+                        <span class="bg-white/5 border border-white/10 text-gray-300 px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="far fa-clock text-gold mr-1"></i> 748 horas</span>
+                        <span class="bg-orange-900/20 border border-gold/30 text-gold px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="fas fa-bolt mr-1"></i> Até 4 Meses*</span>
+                    </div>
+
                     <a href="#matricula" class="text-gold font-bold uppercase text-xs tracking-[0.2em] group-hover:text-white transition-colors flex items-center">
                         CONHECER A PÓS <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1"> <div class="flex justify-between items-center mb-6">
+                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1 flex flex-col h-full"> 
+                    <div class="flex justify-between items-center mb-6">
                         <span class="text-gray-600 font-black text-2xl font-montserrat">09</span>
                         <span class="bg-orange-900/30 text-gold border border-gold/20 px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold">EDUCAÇÃO BÁSICA</span>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-4 leading-snug font-montserrat">Educação Infantil e Ensino Lúdico</h3>
-                    <p class="text-sm text-gray-400 mb-8 leading-relaxed">A ludicidade como ferramenta estratégica indispensável para o desenvolvimento cognitivo e social na primeira infância.</p>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed flex-grow">A ludicidade como ferramenta estratégica indispensável para o desenvolvimento cognitivo e social na primeira infância.</p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-8 mt-auto">
+                        <span class="bg-white/5 border border-white/10 text-gray-300 px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="far fa-clock text-gold mr-1"></i> 826 horas</span>
+                        <span class="bg-orange-900/20 border border-gold/30 text-gold px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="fas fa-bolt mr-1"></i> Até 4 Meses*</span>
+                    </div>
+
                     <a href="#matricula" class="text-gold font-bold uppercase text-xs tracking-[0.2em] group-hover:text-white transition-colors flex items-center">
                         CONHECER A PÓS <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1"> <div class="flex justify-between items-center mb-6">
+                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1 flex flex-col h-full"> 
+                    <div class="flex justify-between items-center mb-6">
                         <span class="text-gray-600 font-black text-2xl font-montserrat">10</span>
                         <span class="bg-orange-900/30 text-gold border border-gold/20 px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold">CLÍNICA & ESCOLA</span>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-4 leading-snug font-montserrat">Especialização Neuropsicopedagogia e o processo de aprendizagem</h3>
-                    <p class="text-sm text-gray-400 mb-8 leading-relaxed">Compreensão profunda dos processos neurobiológicos da aprendizagem para intervenções de sucesso.</p>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed flex-grow">Compreensão profunda dos processos neurobiológicos da aprendizagem para intervenções de sucesso.</p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-8 mt-auto">
+                        <span class="bg-white/5 border border-white/10 text-gray-300 px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="far fa-clock text-gold mr-1"></i> 700 horas</span>
+                        <span class="bg-orange-900/20 border border-gold/30 text-gold px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="fas fa-bolt mr-1"></i> Até 4 Meses*</span>
+                    </div>
+
                     <a href="#matricula" class="text-gold font-bold uppercase text-xs tracking-[0.2em] group-hover:text-white transition-colors flex items-center">
                         CONHECER A PÓS <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-2"></i>
                     </a>
                 </div>
 
-                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1"> <div class="flex justify-between items-center mb-6">
+                <div class="bg-white/5 border border-white/5 hover:border-gold/50 p-10 rounded-2xl transition-all duration-300 group hover:-translate-y-1 flex flex-col h-full"> 
+                    <div class="flex justify-between items-center mb-6">
                         <span class="text-gray-600 font-black text-2xl font-montserrat">11</span>
                         <span class="bg-orange-900/30 text-gold border border-gold/20 px-3 py-1 rounded-full text-[10px] uppercase tracking-widest font-bold">PSICOPEDAGOGIA</span>
                     </div>
                     <h3 class="text-xl font-bold text-white mb-4 leading-snug font-montserrat">Psicopedagogia com Ênfase em Educação Especial</h3>
-                    <p class="text-sm text-gray-400 mb-8 leading-relaxed">Avaliação e intervenção psicopedagógica estratégica focada na superação de barreiras de aprendizagem.</p>
+                    <p class="text-sm text-gray-400 mb-6 leading-relaxed flex-grow">Avaliação e intervenção psicopedagógica estratégica focada na superação de barreiras de aprendizagem.</p>
+                    
+                    <div class="flex flex-wrap gap-2 mb-8 mt-auto">
+                        <span class="bg-white/5 border border-white/10 text-gray-300 px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="far fa-clock text-gold mr-1"></i> 772 horas</span>
+                        <span class="bg-orange-900/20 border border-gold/30 text-gold px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest uppercase"><i class="fas fa-bolt mr-1"></i> Até 4 Meses*</span>
+                    </div>
+
                     <a href="#matricula" class="text-gold font-bold uppercase text-xs tracking-[0.2em] group-hover:text-white transition-colors flex items-center">
                         CONHECER A PÓS <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-2"></i>
                     </a>
@@ -394,7 +481,7 @@
         </div>
     </section>
 
-    <section id="matricula" class="py-32 container mx-auto px-6 max-w-2xl relative z-10"> <div class="card-glass p-12 md:p-16 rounded-[2rem] border border-gold/50 shadow-[0_0_50px_rgba(255,128,0,0.1)]"> <div class="text-center mb-12"> <h2 class="text-3xl md:text-4xl font-black uppercase font-montserrat mb-4">SOLICITAÇÃO DE VAGA PREMIUM</h2> <div class="inline-flex items-center justify-center gap-2 bg-red-900/30 text-red-400 border border-red-500/30 px-6 py-2 rounded-full">
+    <section id="matricula" class="py-32 container mx-auto px-6 max-w-2xl relative z-10"> <div class="card-glass p-12 md:p-16 rounded-[2rem] border border-gold/50 shadow-[0_0_50px_rgba(255,85,0,0.1)]"> <div class="text-center mb-12"> <h2 class="text-3xl md:text-4xl font-black uppercase font-montserrat mb-4">SOLICITAÇÃO DE VAGA PREMIUM</h2> <div class="inline-flex items-center justify-center gap-2 bg-red-900/30 text-red-400 border border-red-500/30 px-6 py-2 rounded-full">
                     <i class="fas fa-exclamation-triangle"></i>
                     <p class="font-bold text-xs uppercase tracking-[0.2em]">poucas vagas promocionais</p> </div>
             </div>
