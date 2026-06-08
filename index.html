@@ -1,4 +1,6 @@
-<!DOCTYPE html><html lang="pt-BR" class="scroll-smooth"><head>
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pós-Graduação Unimar. Nota Máxima no MEC. Compre 1, Ganhe Outra por apenas R$ 42,45 cada mensal. Forme-se em até 4 meses.">
@@ -9,14 +11,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800;900&family=Inter:wght@400;500;700&display=swap');
         
         :root {
-            /* Fundo Azul Marinho Premium Profundo - Mantido como base */
             --bg-dark: #0A1428; 
-            /* Identidade Laranja com Muito Mais Vida / Vibrante */
             --gold-primary: #FF5500; 
             --gold-hover: #FF7733; 
             --glass-bg: rgba(255, 255, 255, 0.02);
             --glass-border: rgba(255, 255, 255, 0.05);
-            /* Azul Ciano Mais Claro e Iluminado */
             --cyan-accent: #4DEBFF; 
         }
 
@@ -75,7 +74,9 @@
         .animate-pop-in {
             animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
         }
-    </style></head><body class="relative">
+    </style>
+</head>
+<body class="relative">
 
     <div id="promo-popup" class="fixed inset-0 z-[100] hidden items-center justify-center bg-[#0A1428]/85 backdrop-blur-sm p-4 transition-opacity duration-300">
         <div class="relative bg-[#0A1428] border-2 border-gold rounded-[2rem] max-w-lg w-full p-12 md:p-14 text-center shadow-[0_0_80px_rgba(255,85,0,0.25)] animate-pop-in">
@@ -544,11 +545,12 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
+            // Popup abre após 50 segundos (50000 ms)
             setTimeout(() => {
                 const popup = document.getElementById('promo-popup');
                 popup.classList.remove('hidden');
                 popup.classList.add('flex');
-            }, 1500);
+            }, 50000);
         });
 
         function closePopup() {
@@ -556,4 +558,6 @@
             popup.classList.add('hidden');
             popup.classList.remove('flex');
         }
-    </script></body></html>
+    </script>
+</body>
+</html>
